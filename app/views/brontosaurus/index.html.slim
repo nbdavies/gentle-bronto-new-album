@@ -3,8 +3,26 @@
     h1 Gentle Brontosaurus
   .row
     .col-2
-      nav class="navbar sticky-top"
-        a href="#video" Video
+      nav.navbar.sticky-top
+        ul.nav.nav-pills.flex-column
+          li.nav-item
+            a.nav-link href="#news" News
+          li.nav-item
+            a.nav-link href="#shows" Shows
+          li.nav-item
+            a.nav-link href="#music" Music
+          li.nav-item
+            a.nav-link href="#video" Video
+          li.nav-item
+            a.nav-link href="#about" About
+          li.nav-item
+            a.nav-link href="#bio" Bio
+          li.nav-item
+            a.nav-link href="#history" History
+          li.nav-item
+            a.nav-link href="#press" Press
+          li.nav-item
+            a.nav-link href="#friends" Friends
     .col-8
       = render partial: 'brontosaurus/partials/news'
 
