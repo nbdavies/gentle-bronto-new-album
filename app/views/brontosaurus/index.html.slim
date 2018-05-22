@@ -1,43 +1,42 @@
+= image_tag 'header.png', alt: 'Gentle Brontosaurus', style: 'max-width: 100%;'
 .container
   .row
-    h1 Gentle Brontosaurus
-  .row
     .col-2
-      nav.navbar.sticky-top
+      nav.navbar.sticky-top#navbar
         ul.nav.nav-pills.flex-column
-          li.nav-item
+          li.nav-item.btn-light
             a.nav-link href="#news" News
-          li.nav-item
+          li.nav-item.btn-light
             a.nav-link href="#shows" Shows
-          li.nav-item
+          li.nav-item.btn-light
             a.nav-link href="#music" Music
-          li.nav-item
+          li.nav-item.btn-light
             a.nav-link href="#video" Video
-          li.nav-item
+          li.nav-item.btn-light
             a.nav-link href="#about" About
-          li.nav-item
+          li.nav-item.btn-light
             a.nav-link href="#bio" Bio
-          li.nav-item
+          li.nav-item.btn-light
             a.nav-link href="#history" History
-          li.nav-item
+          li.nav-item.btn-light
             a.nav-link href="#press" Press
-          li.nav-item
+          li.nav-item.btn-light
             a.nav-link href="#friends" Friends
     .col-8
       = render partial: 'brontosaurus/partials/news'
-
+      hr
       = render partial: 'brontosaurus/partials/shows'
-
+      hr
       = render partial: 'brontosaurus/partials/music'
-
+      hr
       = render partial: 'brontosaurus/partials/video'
-
+      hr
       = render partial: 'brontosaurus/partials/about'
-
+      hr
       = render partial: 'brontosaurus/partials/bio'
-
+      hr
       = render partial: 'brontosaurus/partials/history'
-
+      hr
       = render partial: 'brontosaurus/partials/press'
-
+      hr
       = render partial: 'brontosaurus/partials/friends'
