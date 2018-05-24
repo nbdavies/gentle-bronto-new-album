@@ -1,28 +1,40 @@
-= image_tag 'header.png', alt: 'Gentle Brontosaurus', style: 'max-width: 100%;'
+= image_tag 'header-letters-only.png', alt: 'Gentle Brontosaurus', style: 'max-width: 100%;'
 .container
   .row
     .col-2
       nav.navbar.sticky-top#navbar
-        ul.nav.nav-pills.flex-column
-          li.nav-item.btn-light
+        #logo style="padding-bottom: 10px; padding-top: 10px;"
+          = image_tag 'gb_logo.png', alt: 'Logo', class: 'img-fluid',  style: 'border-radius: 100%; border: 2px solid #0D4C69; background-color: rgba(255,255,255,0.8)'
+        ul.nav.nav-pills.justify-content-center.nav-fill
+          li.nav-item
             a.nav-link href="#news" News
-          li.nav-item.btn-light
+          li.nav-item
             a.nav-link href="#shows" Shows
-          li.nav-item.btn-light
+          li.nav-item
             a.nav-link href="#music" Music
-          li.nav-item.btn-light
+          li.nav-item
             a.nav-link href="#video" Video
-          li.nav-item.btn-light
+          li.nav-item
             a.nav-link href="#about" About
-          li.nav-item.btn-light
+          li.nav-item
             a.nav-link href="#bio" Bio
-          li.nav-item.btn-light
+          li.nav-item
             a.nav-link href="#history" History
-          li.nav-item.btn-light
+          li.nav-item
             a.nav-link href="#press" Press
-          li.nav-item.btn-light
+          li.nav-item
             a.nav-link href="#friends" Friends
-    .col-8
+        a.svg> href="https://gentlebrontosaurus.bandcamp.com"
+          object type="image/svg+xml" data="#{asset_path 'bandcamp.svg'}"
+        a.svg> href="https://www.facebook.com/GentleBrontosaurus/"
+          object type="image/svg+xml" data="#{asset_path 'facebook.svg'}"
+        a.svg> href="https://twitter.com/GentleBronto"
+          object type="image/svg+xml" data="#{asset_path 'twitter.svg'}"
+        a.svg> href="https://soundcloud.com/gentle-brontosaurus"
+          object type="image/svg+xml" data="#{asset_path 'soundcloud.svg'}"
+        a.svg href="https://www.youtube.com/channel/UCUuQVacYk3FdPHuDn2pq9Ag"
+          object type="image/svg+xml" data="#{asset_path 'youtube.svg'}"
+    .col-8 style="background-color: rgba(255,255,255,0.8)"
       = render partial: 'brontosaurus/partials/news'
       hr
       = render partial: 'brontosaurus/partials/shows'
@@ -40,3 +52,4 @@
       = render partial: 'brontosaurus/partials/press'
       hr
       = render partial: 'brontosaurus/partials/friends'
+      hr
